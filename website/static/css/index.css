@@ -1,5 +1,33 @@
+:root {
+    --tech-gold: rgb(179,163,105);
+    --navy-blue: rgb(0, 48, 87);
+    --white: rgb(255, 255, 255);
+}
+
 html,
 body {
-    background: red;
+    background-color: var(--white);
     margin: 0;
+}
+
+/*
+Tweaks
+================================================================================
+*/
+
+.tw__gt-copyright {
+    display: flex; 
+    flex-direction: column; 
+    align-items: left;
+}
+
+.tw__gt-logo-link {
+    display: block; 
+    margin: 0; 
+    padding: 0;
+}
+
+.tw__gt-footer {
+    margin: 0;
+    padding: 0;
 }
