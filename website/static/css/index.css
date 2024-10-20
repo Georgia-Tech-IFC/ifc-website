@@ -31,3 +31,25 @@ Tweaks
     margin: 0;
     padding: 0;
 }
+
+.tw__footer-link {
+    display: flex;
+    align-items: center;
+}
+
+.tw__footer-link > svg {
+    height: 1rem;
+    width: 1rem;
+}
+
+.tw__gt-phone,
+.tw__gt-campus-map {
+    fill: #262626;
+    margin-right: .5rem;
+}
+
+.tw__link {
+    fill: #262626;
+    height: 1.5rem;
+    width: 1.5rem;
+}

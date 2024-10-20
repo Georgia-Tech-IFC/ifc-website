@@ -723,20 +723,6 @@
       margin: .5rem 0 .25rem;
   }
   
-  a.gt-phone::before
-{
-      content: "\f095";
-      font-family: 'FontAwesome';
-      margin: 0 .5rem 0 0;
-  }
-  
-  a.gt-campus-map::before
-  {
-      content: "\f041";
-      font-family: 'FontAwesome';
-      margin: 0 .75rem 0 0;
-  }
-  
   /* End Footer */
   
   /* SuperFooter */
