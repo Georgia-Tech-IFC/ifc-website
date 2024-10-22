@@ -6,11 +6,26 @@
     - history
 - chapters
     - awards
-    - governing documents
-- recruitment rush
-- parents resources
-- summer housing
+    - bylaws
+    - social registration form
+    - financial form
+- parents
+- rush
+    - how rush works? (rush page)
+    - why join? (rush page)
+    - FAQs (rush page)
+    - rush videos
+- resources
+    - summer housing (summer housing page)
 - contact
+
+how recruitment works
+meet our chapters
+why join?
+section
+chapter videos?? (can be integrated elsewhere)
+rules and reporting
+
 
 # Media
 - logos

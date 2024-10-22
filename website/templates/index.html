@@ -34,38 +34,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="nav">
-            <div class="nav__logo__container">
-                <img class="nav__logo" src="{% static 'img/GeorgiaTech_TechGold.svg' %}" />
-            </div>
-            <div class="nav__links__container">
-                <button class="nav__link nav__link__about-us" id="about-us" href="/">
-                    About Us
-                </button>
-                <button class="nav__link nav__link__chapters" id="chapters" href="/">
-                    For Chapters
-                </button>
-                <a class="nav__link" href="/">
-                    Rush
-                </a>
-                <a class="nav__link" href="/">
-                    Summer Housing
-                </a>
-                <a class="nav__link__button" href="/">
-                    Contact
-                </a>
-            </div>
-        </nav>
-        <div class="nav__dropdown nav__dropdown__about-us">
-            <a class="nav__link__dropdown" href="/">Meet Our Chapters</a>
-            <a class="nav__link__dropdown" href="/">Purpose</a>
-            <a class="nav__link__dropdown" href="/">Executive Board</a>
-            <a class="nav__link__dropdown" href="/">History</a>
-        </div>
-        <div class="nav__dropdown nav__dropdown__chapters">
-            <a class="nav__link__dropdown" href="/">Annual Awards</a>
-            <a class="nav__link__dropdown" href="/">Governing Documents</a>
-        </div>
+        {% include 'partials/nav.html' %}
         <img class="landing__background" src="{% static 'img/Homepage.jpg' %}" />
         <div class="landing__background__filter"></div>
         <div class="welcome__section">

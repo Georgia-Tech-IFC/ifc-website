@@ -9,8 +9,6 @@ message from ifc president
 nav bar like the gatech websites, should drop down after page scroll
 nav bar should more align with markitechture
 
-# IFC Blog
-
 # Footer
 should follow gatech
 
@@ -42,3 +40,6 @@ rules and reporting
     - our chapters
     - for chapters
     - summer housing
+
+
+

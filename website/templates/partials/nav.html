@@ -1,0 +1,46 @@
+{% load static %}
+<nav class="nav">
+    <div class="nav__logo__container">
+        <img class="nav__logo" src="{% static 'img/GeorgiaTech_TechGold.svg' %}" />
+    </div>
+    <div class="nav__links__container">
+        <button class="nav__link nav__link__about-us" data-menu="about-us" href="/">
+            About Us
+        </button>
+        <button class="nav__link nav__link__rush" data-menu="rush" href="/">
+            Rush
+        </button>
+        <button class="nav__link nav__link__chapters" data-menu="chapters" href="/">
+            For Chapters
+        </button>
+        <button class="nav__link nav__link__resources" data-menu="resources" href="/">
+            Resources
+        </button>
+        <a class="nav__link__button" href="/">
+            Contact
+        </a>
+    </div>
+</nav>
+<div class="nav__dropdown nav__dropdown__about-us">
+    <a class="nav__link__dropdown" href="/">Meet Our Chapters</a>
+    <a class="nav__link__dropdown" href="/">Purpose</a>
+    <a class="nav__link__dropdown" href="/">Executive Board</a>
+    <a class="nav__link__dropdown" href="/">History</a>
+</div>
+<div class="nav__dropdown nav__dropdown__rush">
+    <a class="nav__link__dropdown" href="/">How Rush Works</a>
+    <a class="nav__link__dropdown" href="/">Why Join?</a>
+    <a class="nav__link__dropdown" href="/">Rush Videos</a>
+    <a class="nav__link__dropdown" href="/">Rules and Reporting</a>
+    <a class="nav__link__dropdown" href="/">FAQs</a>
+</div>
+<div class="nav__dropdown nav__dropdown__chapters">
+    <a class="nav__link__dropdown" href="/">Annual Awards</a>
+    <a class="nav__link__dropdown" href="/">Bylaws</a>
+    <a class="nav__link__dropdown" href="/">Social Registration</a>
+    <a class="nav__link__dropdown" href="/">Financial</a>
+    <a class="nav__link__dropdown" href="/">Grade Reports</a>
+</div>
+<div class="nav__dropdown nav__dropdown__resources">
+    <a class="nav__link__dropdown" href="/">Summer Housing</a>
+</div>
