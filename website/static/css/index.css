@@ -237,6 +237,26 @@ Landing Background
 Cookies
 ================================================================================
 */
+
+@keyframes cookies-banner-fade-out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.cookies__banner__fade-out {
+    animation: cookies-banner-fade-out .2s ease-in-out forwards;
+}
+
+.cookies__banner__no-display {
+    display: none !important;
+    z-index: -1 !important;
+}
+
 .cookies__banner {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.75);
@@ -248,6 +268,15 @@ Cookies
     justify-content: center;
     z-index: 995;
     bottom: 0;
+    opacity: 1;
+}
+
+.cookies__link,
+.cookies__link__gold {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 .cookies__link {
@@ -261,6 +290,7 @@ Cookies
 
 .cookies__link:hover {
     color: var(--white);
+    text-decoration: underline;
 }
 
 .cookies__link__gold:hover {
@@ -268,5 +298,5 @@ Cookies
 }
 
 .cookies__pad {
-    padding: 0 0 0.75rem;
+    margin: 0 0 0 .75rem;
 }
