@@ -204,7 +204,8 @@ Nav
 }
 
 /*
-Background
+Landing Background
+================================================================================
 */
 
 .landing__background,
@@ -230,4 +231,42 @@ Background
     height: 100vh;
     width: 100vw;
     z-index: 990;
+}
+
+/*
+Cookies
+================================================================================
+*/
+.cookies__banner {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 4rem;
+    justify-content: center;
+    z-index: 995;
+    bottom: 0;
+}
+
+.cookies__link {
+    color: var(--white);
+}
+
+.cookies__link__gold {
+    color: var(--tech-gold);
+    text-decoration: none;
+}
+
+.cookies__link:hover {
+    color: var(--white);
+}
+
+.cookies__link__gold:hover {
+    color: var(--tech-gold);
+}
+
+.cookies__pad {
+    padding: 0 0 0.75rem;
 }
