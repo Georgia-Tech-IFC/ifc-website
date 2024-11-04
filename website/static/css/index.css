@@ -208,21 +208,32 @@ Landing Background
 ================================================================================
 */
 
-.landing__background,
-.landing__background__filter {
+.landing__background__container {
     height: 100vh;
     width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 980;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.landing__background {
+    background-size: cover !important;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 980;
 }
 
-.landing__background {
-    z-index: 980;
-}
-
 .landing__background__filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.55);
     z-index: 981;
 }

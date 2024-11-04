@@ -31,9 +31,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
     const acceptButton = document.querySelector( '.cookies__accept' )
     const rejectButton = document.querySelector( '.cookies__reject' )
 
-    // state
-    let cookies = false;
-
     const fadeOutBanner = () => {
         cookiesBanner.classList.add( 'cookies__banner__fade-out' )
     }
@@ -41,13 +38,15 @@ document.addEventListener( 'DOMContentLoaded', () => {
     if ( getCookie( 'gtifc-no-cookie' ) != 'true' && getCookie( 'gtifc-no-cookie' ) != 'false' ) {
         cookiesBanner.classList.remove( 'cookies__banner__no-display' )
 
+        const day = 1000 * 60 * 60 * 24
+
         acceptButton.addEventListener( 'click', () => {
-            setCookie( 'gtifc-no-cookie', 'false', 1000 * 60 * 60 * 24 )
+            setCookie( 'gtifc-no-cookie', 'false', day )
             fadeOutBanner()
         })
     
         rejectButton.addEventListener( 'click', () => {
-            setCookie( 'gtifc-no-cookie', 'true', 1000 * 60 * 60 * 24 )
+            setCookie( 'gtifc-no-cookie', 'true', day )
             fadeOutBanner()
         })
     }
