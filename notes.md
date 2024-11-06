@@ -43,3 +43,9 @@ rules and reporting
 
 
 
+# Title Screen - meet our chapters, recruitment 2024
+# Parallax scrolling like vatech's
+# scrolls down to welcome from the president - separator with the stripes
+# scrolls down to three blurbs about purpose, why join, our chapters
+# contact form
+

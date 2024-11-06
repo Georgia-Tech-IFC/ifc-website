@@ -1,6 +1,6 @@
 :root {
     --tech-gold: rgb(179,163,105);
-    --tech-gold-hover: rgb(161, 146, 94);
+    --tech-gold-hover: rgb(142, 129, 83);
     --navy-blue: rgb(0, 48, 87);
     --white: rgb(255, 255, 255);
     --off-black: #262626;
@@ -13,6 +13,17 @@ body {
     margin: 0;
     overscroll-behavior-y: none;
 }
+
+@font-face {
+    font-family: "din-2014";
+    src:url("/static/fonts/din-2014.woff2") format("woff2"), url("/static/fonts/din-2014.woff") format("woff"), url("/static/fonts/din-2014.otf") format("opentype");
+    font-display: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-stretch:normal;
+}
+    
+.tk-din-2014-narrow { font-family: "din-2014",sans-serif; }
 
 /*
 Tweaks
@@ -99,8 +110,9 @@ Nav
     border: 0;
     color: var(--white);
     display: inline-block;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
+    font-size: .875rem;
     margin: 0 1rem 0 0;
     padding: 0;
     text-decoration: none;
@@ -113,10 +125,10 @@ Nav
 
 .nav__link::after {
     content: '';
-    border-radius: .75px;
+    border-radius: .5px;
     display: block;
     width: 0;
-    height: 1.5px;
+    height: 1px;
     background: var(--white);
     transition: width .3s;
 }
@@ -128,8 +140,9 @@ Nav
 
 .nav__link__dropdown {
     color: var(--black);
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
+    font-size: .875rem;
     text-decoration: none;
     transition: .3s;
 }
@@ -142,10 +155,11 @@ Nav
 .nav__link__button {
     background: var(--tech-gold);
     border: none;
+    font-size: .875rem;
     border-radius: 0.375rem;
     color: var(--white);
     display: inline-block;
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     margin: 0 0 0 .5rem;
     padding: 0.25rem 0.7rem 0.25rem 0.6rem;
@@ -241,7 +255,113 @@ Landing Background
 .welcome__section {
     height: 100vh;
     width: 100vw;
-    z-index: 990;
+    display: flex;
+    align-items: center;
+    z-index: 983;
+}
+
+.welcome__container {
+    color: var(--white);
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 3.5rem;
+    z-index: inherit;
+    margin-left: 8rem;
+    width: fit-content;
+    padding: 1.1rem 1.5rem 1.5rem 1.5rem;
+    --s: 3rem; /* the size on the corner */
+    --t: 3px;  /* the thickness of the border */
+    --pad: calc(1.5rem + var(--t));
+    padding: calc(1.1rem + var(--t)) var(--pad) calc(1.1rem + var(--t)) var(--pad);
+    outline: var(--t) solid var(--white); /* the color here */
+    outline-offset: calc(-1*var(--t));
+    mask:
+        conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+        calc(100% - var(--s)) calc(100% - var(--s))/calc(100%) calc(100%),
+        conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+        0 0/calc(100%) calc(100%),
+        linear-gradient(#000 0 0) content-box;
+}
+
+@keyframes welcome-button-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.welcome__button__fade-in {
+    animation: welcome-button-fade-in .375s ease-in-out forwards;
+}
+
+.welcome__button__container {
+    line-height: 1.25rem;
+    padding: 0 0 0 .25rem;
+    margin-top: .2rem;
+    opacity: 0;
+}
+
+.welcome__line {
+    font-size: 0;
+    line-height: 4rem;
+}
+
+.welcome__char__trans,
+.welcome__char__show {
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.welcome__char__trans {
+    opacity: 0;
+}
+
+.welcome__char__show {
+    opacity: 1;
+}
+
+.welcome__button {
+    border: none;
+    font-size: .875rem;
+    border-radius: 0.375rem;
+    color: var(--white);
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: .875rem;
+    padding: 0.3rem .7rem 0.3rem .6rem;
+    text-decoration: none;
+    transition: .15s ease-in-out;
+    margin: 0 .75rem 0 0;
+}
+
+.welcome__button:hover {
+    text-decoration: none;
+}
+
+.welcome__button__gold {
+    background: var(--tech-gold);
+    border: 2px solid var(--tech-gold);
+}
+
+.welcome__button__gold:hover {
+    color: var(--white);
+    border: 2px solid var(--tech-gold-hover);
+    background: var(--tech-gold-hover);
+}
+
+.welcome__button__outline {
+    background-color: transparent;
+    border: 2px solid var(--white);
+}
+
+.welcome__button__outline:hover {
+    color: var(--off-black);
+    background-color: var(--white);
+    border: 2px solid var(--white);
 }
 
 /*
