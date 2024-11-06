@@ -26,6 +26,12 @@ class DropdownMenu {
                 }
             }
         })
+
+        window.addEventListener( 'scroll', () => {
+            if ( this.opened ) {
+                this.close()
+            }
+        })
     }
 
     close = () => {

@@ -4,7 +4,7 @@
     --navy-blue: rgb(0, 48, 87);
     --white: rgb(255, 255, 255);
     --off-black: #262626;
-    --off-black-lighter: #6d6d6d;
+    --off-black-lighter: #777777;
 }
 
 html,
@@ -82,8 +82,8 @@ Nav
     --x-padding: 8rem;
     align-items: center;
     display: flex;
-    /*box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;*/
-    /*box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;*/
+    background: transparent;
+    box-shadow: none;
     font-family: "Roboto", sans-serif;
     height: 3.75rem;
     padding: 0 var(--x-padding);
@@ -93,6 +93,36 @@ Nav
     left: 0;
     width: 100vw;
     z-index: 991;
+}
+
+@keyframes nav-fade-in {
+    0% {
+        background: transparent;
+        box-shadow: none;
+    }
+    100% {
+        background: var(--white);
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    }
+}
+
+.nav__fade-in {
+    animation: nav-fade-in .25s ease-in-out forwards;
+}
+
+@keyframes nav-fade-out {
+    0% {
+        background: var(--white);
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    }
+    100% {
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+.nav__fade-out {
+    animation: nav-fade-out .25s ease-in-out forwards;
 }
 
 .nav__logo__container,
@@ -118,6 +148,32 @@ Nav
     text-decoration: none;
 }
 
+@keyframes nav-link-fade-in {
+    0% {
+        color: var(--white);
+    }
+    100% {
+        color: var(--off-black);
+    }
+}
+
+.nav__link__fade-in {
+    animation: nav-link-fade-in .25s ease-in-out forwards;
+}
+
+@keyframes nav-link-fade-out {
+    0% {
+        color: var(--off-black);
+    }
+    100% {
+        color: var(--white)
+    }
+}
+
+.nav__link__fade-out {
+    animation: nav-link-fade-out .25s ease-in-out forwards;
+}
+
 .nav__link:hover {
     color: var(--white);
     text-decoration: none;
@@ -131,6 +187,32 @@ Nav
     height: 1px;
     background: var(--white);
     transition: width .3s;
+}
+
+@keyframes nav-link-fade-in-after {
+    0% {
+        background: var(--white);
+    }
+    100% {
+        background: var(--off-black);
+    }
+}
+
+.nav__link__fade-in::after {
+    animation: nav-link-fade-in-after .25s ease-in-out forwards;
+}
+
+@keyframes nav-link-fade-out-after {
+    0% {
+        color: var(--white);
+    }
+    100% {
+        color: var(--off-black)
+    }
+}
+
+.nav__link__fade-out::after {
+    animation: nav-link-fade-out-after .25s ease-in-out forwards;
 }
 
 .nav__link:hover::after {
@@ -182,7 +264,7 @@ Nav
     flex-direction: column;
     opacity: 0;
     padding: .5rem .75rem;
-    position: absolute;
+    position: fixed;
     transform: translateY(-10%);
     z-index: 998;
 }
@@ -273,7 +355,7 @@ Landing Background
     --t: 3px;  /* the thickness of the border */
     --pad: calc(1.5rem + var(--t));
     padding: calc(1.1rem + var(--t)) var(--pad) calc(1.1rem + var(--t)) var(--pad);
-    outline: var(--t) solid var(--white); /* the color here */
+    outline: var(--t) solid transparent;
     outline-offset: calc(-1*var(--t));
     mask:
         conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
@@ -281,6 +363,19 @@ Landing Background
         conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
         0 0/calc(100%) calc(100%),
         linear-gradient(#000 0 0) content-box;
+}
+
+@keyframes welcome-container-fade-in {
+    0% {
+        outline: var(--t) solid transparent;
+    }
+    100% {
+        outline: var(--t) solid var(--white);
+    }
+}
+
+.welcome__container__fade-in {
+    animation: welcome-container-fade-in .25s ease-in-out forwards;
 }
 
 @keyframes welcome-button-fade-in {
@@ -293,7 +388,7 @@ Landing Background
 }
 
 .welcome__button__fade-in {
-    animation: welcome-button-fade-in .375s ease-in-out forwards;
+    animation: welcome-button-fade-in .25s ease-in-out forwards;
 }
 
 .welcome__button__container {

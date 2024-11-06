@@ -66,6 +66,7 @@ const typewriterEffect = () => {
     const line1 = document.querySelector( '.welcome__line-1' )
     const line2 = document.querySelector( '.welcome__line-2' )
     const buttonContainer = document.querySelector( '.welcome__button__container' )
+    const welcomeContainer = document.querySelector( '.welcome__container' )
 
     let time = 25
 
@@ -79,7 +80,8 @@ const typewriterEffect = () => {
                 if ( j == line2.children.length ) {
                     setTimeout(() => {
                         buttonContainer.classList.add( 'welcome__button__fade-in' )
-                    }, 500)
+                        welcomeContainer.classList.add( 'welcome__container__fade-in' )
+                    }, 25)
 
                     clearInterval( line2Int )
                 }
