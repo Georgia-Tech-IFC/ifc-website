@@ -95,6 +95,11 @@ Nav
     z-index: 991;
 }
 
+.nav__white {
+    background: var(--white);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
 @keyframes nav-fade-in {
     0% {
         background: transparent;
@@ -174,8 +179,11 @@ Nav
     animation: nav-link-fade-out .25s ease-in-out forwards;
 }
 
+.nav__link__white {
+    color: var(--off-black);
+}
+
 .nav__link:hover {
-    color: var(--white);
     text-decoration: none;
 }
 
@@ -187,6 +195,10 @@ Nav
     height: 1px;
     background: var(--white);
     transition: width .3s;
+}
+
+.nav__link__white::after {
+    background: var(--off-black);
 }
 
 @keyframes nav-link-fade-in-after {

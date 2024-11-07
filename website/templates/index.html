@@ -3,12 +3,16 @@
 <html lang="en">
     {% include 'partials/head.html' %}
     <body>
-        {% include 'partials/nav.html' %}
+        {% include 'partials/nav-index.html' %}
         {% include 'partials/welcome.html' %}
         <div class="main__content">
             {% include 'partials/footer.html' %}
         </div>
         {% include 'partials/cookies.html' %}
-        {% include 'partials/js.html' %}
+        <script src="{% static 'js/cheers.js' %}"></script>
+        <script src="{% static 'js/cookies.js' %}"></script>
+        <script src="{% static 'js/dropdown.js' %}"></script>
+        <script src="{% static 'js/landingBackground.js' %}"></script>
+        <script src="{% static 'js/nav.js' %}"></script>
     </body>
 </html>

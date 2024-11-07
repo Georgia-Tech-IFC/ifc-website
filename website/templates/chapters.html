@@ -1,0 +1,12 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'partials/head.html' %}
+    <body>
+        {% include 'partials/nav.html' %}
+        <div style="width: 100vw; height: 100vh; background-color: white;"></div>
+        <script src="{% static 'js/cheers.js' %}"></script>
+        <script src="{% static 'js/cookies.js' %}"></script>
+        <script src="{% static 'js/dropdown.js' %}"></script>
+    </body>
+</html>
