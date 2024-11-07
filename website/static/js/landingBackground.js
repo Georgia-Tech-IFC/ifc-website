@@ -107,7 +107,24 @@ const typewriterEffect = () => {
     }, time)
 }
 
+const parallaxScroll = () => {
+    const backgroundContainer = document.querySelector( '.landing__background__container' )
+    const backgroundFilter = document.querySelector( '.landing__background__filter' )
+    const welcomeSection = document.querySelector( '.welcome__section' )
+
+    window.addEventListener( 'scroll', () => {
+        const speed = 0.5
+        const top = window.scrollY
+        const translate = top * speed
+    
+        backgroundContainer.style.transform = `translateY(${translate}px)`
+        backgroundFilter.style.transform = `translateY(${translate}px)`
+        welcomeSection.style.transform = `translateY(${translate}px)`
+    })
+}
+
 document.addEventListener( 'DOMContentLoaded', () => {
     initImageBackground()
     typewriterEffect()
+    parallaxScroll()
 })

@@ -339,6 +339,9 @@ Landing Background
     width: 100vw;
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: 983;
 }
 
@@ -457,6 +460,20 @@ Landing Background
     color: var(--off-black);
     background-color: var(--white);
     border: 2px solid var(--white);
+}
+
+/*
+Content
+================================================================================
+*/
+.main__content {
+    background-color: red;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 990;
 }
 
 /*
