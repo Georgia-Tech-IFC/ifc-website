@@ -701,3 +701,14 @@ Executive Board
     width: 100vw;
     padding: 4rem 16rem;
 }
+
+/*
+Contact
+================================================================================
+*/
+
+.contact__container {
+    background: var(--white);
+    width: 100vw;
+    padding: 4rem 16rem;
+}
