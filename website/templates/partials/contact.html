@@ -1,3 +1,22 @@
 <div class="contact__container">
-    Contact
+    <div class="contact__wrapper">
+        <form class="contact__form" action="/submit" method="POST"></form>
+            <h1 class="contact__header">Contact Us</h2>
+            <div class="contact__row">
+                <div class="contact__group">
+                    <input class="contact__input" type="text" name="name" placeholder=" " required>
+                    <label class="contact__label">Name</label>
+                </div>
+                <div class="contact__group">
+                    <input class="contact__input" type="text" name="email" placeholder=" " required>
+                    <label class="contact__label">Email</label>
+                </div>
+            </div>
+            <div class="contact__group">
+                <textarea class="contact__input contact__textarea" type="text" name="message" placeholder=" " required></textarea>
+                <label class="contact__label">Message</label>
+            </div>
+            <button type="submit" class="contact__button">SUBMIT</button>
+        </form>
+    </div>
 </div>
