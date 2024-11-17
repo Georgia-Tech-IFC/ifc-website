@@ -564,7 +564,7 @@ President Welcome
 .president__welcome__container {
     background: var(--white);
     width: 100vw;
-    padding: 4rem 16rem;
+    padding: 8rem 16rem;
 }
 
 .president__welcome__image__container {
@@ -615,7 +615,7 @@ Welcome Links
 }
 
 .welcome__link__container {
-    height: 50vh;
+    height: 35vh;
     width: auto;
     flex: 1;
     display: flex;
@@ -688,18 +688,70 @@ Mission
 .mission__container {
     background: var(--white);
     width: 100vw;
-    padding: 4rem 16rem;
+    padding: 12rem 16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mission__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.1rem 1.5rem 1.5rem 1.5rem;
+    --s: 3rem; /* the size on the corner */
+    --t: 3px;  /* the thickness of the border */
+    --pad: calc(2rem + var(--t));
+    padding: calc(0.6rem + var(--t)) var(--pad) calc(1.1rem + var(--t)) var(--pad);
+    outline: var(--t) solid var(--off-black);
+    outline-offset: calc(-1*var(--t));
+    mask:
+        conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+        calc(100% - var(--s)) calc(100% - var(--s))/calc(100%) calc(100%),
+        conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+        0 0/calc(100%) calc(100%),
+        linear-gradient(#000 0 0) content-box;
+}
+
+.mission__header {
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.mission__text {
+    font-weight: 400;
+    font-size: 1.125rem;
+    text-align: center;
 }
 
 /*
-Executive Board
+Recruitment
 ================================================================================
 */
 
-.executive__board__container {
+.recruitment__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background: var(--white);
     width: 100vw;
     padding: 4rem 16rem;
+}
+
+.recruitment__header {
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.recruitment__text {
+    font-weight: 400;
+    font-size: 1.125rem;
+    text-align: center;
 }
 
 /*
