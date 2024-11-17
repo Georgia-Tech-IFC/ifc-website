@@ -43,6 +43,7 @@ Tweaks
 }
 
 .tw__gt-footer {
+    position: relative;
     margin: 0;
     padding: 0;
     z-index: 990;
@@ -479,7 +480,6 @@ Content
 ================================================================================
 */
 .main__content {
-    background-color: red;
     position: absolute;
     top: 100vh;
     left: 0;
@@ -554,4 +554,128 @@ Cookies
 
 .cookies__pad {
     margin: 0 0 0 .75rem;
+}
+
+/*
+President Welcome
+================================================================================
+*/
+
+.president__welcome__container {
+    background: var(--white);
+    width: 100vw;
+    padding: 4rem 16rem;
+}
+
+.president__welcome__image__container {
+    float: right;
+    width: 20vw;
+    margin: 0 0 4rem 4rem;
+}
+
+.president__welcome__image {
+    width: 100%;
+    height: auto;
+}
+
+.president__welcome__image__name {
+    color: var(--off-black);
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.president__welcome__image__title {
+    color: var(--off-black-lighter);
+    font-family: "din-2014", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.president__welcome__header {
+    color: var(--tech-gold);
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+}
+
+.president__welcome__text {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+/*
+Welcome Links
+================================================================================
+*/
+
+.welcome__links__container {
+    display: flex;
+}
+
+.welcome__link__container {
+    height: 50vh;
+    width: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome__link__container__blue {
+    background-color: var(--navy-blue);
+}
+
+.welcome__link__container__gold {
+    background-color: var(--tech-gold);
+}
+
+.welcome__link {
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--white);
+    display: block;
+    overflow-x: visible !important;
+}
+
+.welcome__link__icon {
+    fill: var(--white);
+    height: 8rem;
+    width: 8rem;
+    margin: 0 0 2rem 0;
+}
+
+.arrow-icon {
+    height: 16px;
+    width: 32px;
+    overflow: visible !important;
+}
+
+.arrow-icon path:nth-child(2) {
+    d: path("M14.5 4H3.5H4");
+}
+
+.arrow-icon path {
+    transition: 0.25s ease;
+}
+
+.welcome__link:hover {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.welcome__link:hover .arrow-icon path:nth-child(1) {
+    d: path("M15 4H4V4");
+}
+
+.welcome__link:hover .arrow-icon path:nth-child(2) {
+    d: path("M14.5 4H3.5H0");
+    transform: translateX(4px);
+}
+
+.welcome__link:hover .arrow-icon path:nth-child(3) {
+    transform: translateX(4px);
 }

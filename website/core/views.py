@@ -7,3 +7,11 @@ def index(request):
 
 def chapters(request):
     return render(request, 'chapters.html')
+
+
+def purpose(request):
+    return render(request, 'purpose.html')
+
+
+def exec(request):
+    return render(request, 'exec.html')

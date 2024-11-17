@@ -41,11 +41,11 @@ rules and reporting
     - for chapters
     - summer housing
 
-
-
-# Title Screen - meet our chapters, recruitment 2024
+# Title Screen - meet our chapters, rush 2024
 # Parallax scrolling like vatech's
 # scrolls down to welcome from the president - separator with the stripes
 # scrolls down to three blurbs about purpose, why join, our chapters
 # contact form
+
+
 
