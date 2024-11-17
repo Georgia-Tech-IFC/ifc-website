@@ -679,3 +679,25 @@ Welcome Links
 .welcome__link:hover .arrow-icon path:nth-child(3) {
     transform: translateX(4px);
 }
+
+/*
+Mission
+================================================================================
+*/
+
+.mission__container {
+    background: var(--white);
+    width: 100vw;
+    padding: 4rem 16rem;
+}
+
+/*
+Executive Board
+================================================================================
+*/
+
+.executive__board__container {
+    background: var(--white);
+    width: 100vw;
+    padding: 4rem 16rem;
+}
