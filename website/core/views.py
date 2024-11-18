@@ -15,3 +15,6 @@ def purpose(request):
 
 def exec(request):
     return render(request, 'exec.html')
+
+def cookies_policy(request):
+    return render(request, 'cookies_policy.html')

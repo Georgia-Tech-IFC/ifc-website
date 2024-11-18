@@ -2,6 +2,7 @@
     --tech-gold: rgb(179,163,105);
     --tech-gold-hover: rgb(142, 129, 83);
     --navy-blue: rgb(0, 48, 87);
+    --navy-blue-hover: rgb(0, 21, 38);
     --white: rgb(255, 255, 255);
     --off-black: #262626;
     --off-black-lighter: #777777;
@@ -868,4 +869,118 @@ Contact
     padding: 0.25rem 0.7rem 0.25rem 0.6rem;
     text-decoration: none;
     transition: .15s ease-in-out;
+}
+
+.contact__button:hover {
+    background-color: var(--tech-gold-hover);
+    color: var(--white);
+    text-decoration: none;
+}
+
+/*
+Page
+================================================================================
+*/
+
+.page__content {
+    background-color: white;
+    padding: 10rem 16rem;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.page__header {
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 0 2rem 0;
+}
+
+.page__h2 {
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.page__text {
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.page__link {
+    color: var(--navy-blue);
+}
+
+.page__link:hover {
+    color: var(--navy-blue);
+    text-decoration: underline;
+}
+
+/*
+Chapters
+================================================================================
+*/
+
+.chapter__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.chapter__image {
+    width: auto;
+    height: 16rem;
+    object-fit: contain;
+}
+
+.chapter {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.chapter__text {
+    color: var(--off-black);
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+
+.chapter__link {
+    text-decoration: none;
+}
+
+.chapter__link:hover {
+    color: var(--off-black);
+    text-decoration: none;
+}
+
+.chapter__arrow-icon {
+    height: 12px;
+    width: 24px;
+    overflow: visible !important;
+}
+
+.chapter__arrow-icon path:nth-child(2) {
+    d: path("M14.5 4H3.5H4");
+}
+
+.chapter__arrow-icon path {
+    transition: 0.25s ease;
+}
+
+.chapter__link:hover .chapter__arrow-icon path:nth-child(1) {
+    d: path("M15 4H4V4");
+}
+
+.chapter__link:hover .chapter__arrow-icon path:nth-child(2) {
+    d: path("M14.5 4H3.5H0");
+    transform: translateX(4px);
+}
+
+.chapter__link:hover .chapter__arrow-icon path:nth-child(3) {
+    transform: translateX(4px);
 }

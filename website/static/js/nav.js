@@ -1,6 +1,9 @@
 document.addEventListener( 'DOMContentLoaded', () => {
     const nav = document.querySelector( '.nav' )
     const navLinks = document.querySelectorAll( '.nav__link' )
+    const contactButton = document.querySelector( '.nav__link__button' )
+    const contactForm = document.querySelector( '.contact__container' )
+
     let navWhite = false
 
     window.addEventListener( 'scroll', () => {
@@ -27,5 +30,9 @@ document.addEventListener( 'DOMContentLoaded', () => {
                 el.classList.add( 'nav__link__fade-out' )
             })
         }
+    })
+
+    contactButton.addEventListener( 'click', () => {
+        contactForm.scrollIntoView( { behavior: 'smooth' } )
     })
 })
