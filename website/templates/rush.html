@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    {% include 'partials/head.html' %}
+    <body>
+        {% include 'partials/nav.html' %}
+        <div class="page__content">
+            <h1 class="page__header">Rush</h1>
+            <h2 class="page__h2">How Rush Works</h2>
+            <h2 class="page__h2">Why Join?</h2>
+            <h2 class="page__h2">Rules and Reporting</h2>
+            <h2 class="page__h2">FAQs</h2>
+        </div>
+        {% include 'partials/footer.html' %}
+        {% include 'partials/cookies.html' %}
+        <script src="{% static 'js/cheers.js' %}"></script>
+        <script src="{% static 'js/cookies.js' %}"></script>
+        <script src="{% static 'js/dropdown.js' %}"></script>
+        <script src="{% static 'js/nav.js' %}"></script>
+    </body>
+</html>

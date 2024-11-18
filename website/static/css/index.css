@@ -902,6 +902,13 @@ Page
     font-size: 2rem;
 }
 
+.page__h2__center {
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+}
+
 .page__text {
     font-weight: 400;
     font-size: 1.125rem;
@@ -930,6 +937,7 @@ Chapters
     width: auto;
     height: 16rem;
     object-fit: contain;
+    transition: 0.125s ease-in-out;
 }
 
 .chapter {
@@ -956,6 +964,10 @@ Chapters
 .chapter__link:hover {
     color: var(--off-black);
     text-decoration: none;
+}
+
+.chapter__link:hover .chapter__image {
+    transform: scale(1.02);
 }
 
 .chapter__arrow-icon {
