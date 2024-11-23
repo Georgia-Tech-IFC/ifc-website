@@ -1020,3 +1020,46 @@ Chapters
 .chapter__link:hover .chapter__arrow-icon path:nth-child(3) {
     transform: translateX(4px);
 }
+
+/*
+Exec
+================================================================================
+*/
+
+.exec__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.exec__image {
+    width: auto;
+    height: 16rem;
+    object-fit: contain;
+    transition: 0.125s ease-in-out;
+}
+
+.exec {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.exec__name {
+    font-family: "din-2014",sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.exec__position {
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+.exec__text {
+    font-family: "din-2014",sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+}

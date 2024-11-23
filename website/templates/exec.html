@@ -4,9 +4,52 @@
     {% include 'partials/head.html' %}
     <body>
         {% include 'partials/nav.html' %}
-        <div style="width: 100vw; height: 100vh; background-color: white;">
-            <div style="margin-top: 10rem;">exec</div>
+        <div class="page__content">
+            <h1 class="page__header">Executive Board</h1>
+            <p class="page__text">
+                Executive Board Email:
+                <a class="page__link" href="mailto:president@ifc.greek.gatech.edu">president@ifc.greek.gatech.edu</a>
+            </p>
+            <div class="exec__container">
+                <div class="exec">
+                    <img class="exec__image" src="{% static 'img/crests/phi_gamma_delta.png' %}" alt="President">
+                    <div class="exec__name">Spongebob</div>
+                    <div class="exec__position">President</div>
+                    <div class="exec__text">Class of 2025</div>
+                    <div class="exec__text">
+                        <a class="page__link" href="mailto:president@ifc.greek.gatech.edu">president@ifc.greek.gatech.edu</a>
+                    </div>
+                </div>
+                <div class="exec">
+                    <img class="exec__image" src="{% static 'img/crests/phi_gamma_delta.png' %}" alt="President">
+                    <div class="exec__name">Spongebob</div>
+                    <div class="exec__position">President</div>
+                    <div class="exec__text">Class of 2025</div>
+                    <div class="exec__text">
+                        <a class="page__link" href="mailto:president@ifc.greek.gatech.edu">president@ifc.greek.gatech.edu</a>
+                    </div>
+                </div>
+                <div class="exec">
+                    <img class="exec__image" src="{% static 'img/crests/phi_gamma_delta.png' %}" alt="President">
+                    <div class="exec__name">Spongebob</div>
+                    <div class="exec__position">President</div>
+                    <div class="exec__text">Class of 2025</div>
+                    <div class="exec__text">
+                        <a class="page__link" href="mailto:president@ifc.greek.gatech.edu">president@ifc.greek.gatech.edu</a>
+                    </div>
+                </div>
+                <div class="exec">
+                    <img class="exec__image" src="{% static 'img/crests/phi_gamma_delta.png' %}" alt="President">
+                    <div class="exec__name">Spongebob</div>
+                    <div class="exec__position">President</div>
+                    <div class="exec__text">Class of 2025</div>
+                    <div class="exec__text">
+                        <a class="page__link" href="mailto:president@ifc.greek.gatech.edu">president@ifc.greek.gatech.edu</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        {% include 'partials/footer.html' %}
         <script src="{% static 'js/cheers.js' %}"></script>
         <script src="{% static 'js/cookies.js' %}"></script>
         <script src="{% static 'js/dropdown.js' %}"></script>
