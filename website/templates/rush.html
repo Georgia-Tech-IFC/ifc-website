@@ -6,8 +6,6 @@
         {% include 'partials/nav.html' %}
         <div class="page__content">
             <h1 class="page__header">Rush</h1>
-            <h2 class="page__h2">Rush Schedule</h2>
-            <h2 class="page__h2">How Rush Works</h2>
             <h3 class="page__h3">What is Recruitment?</h3>
             <p class="page__text">
                 Rush is your chance to explore the incredible world of 
@@ -24,6 +22,24 @@
                 get ready to make memories that last a lifetime. Welcome to the 
                 start of something big!
             </p>
+            <h3 class="page__h3">Rush Schedule</h3>
+            <ul class="page__list">
+                <li class="page__list__item">
+                    <p class="page__text">August 14 @ 5PM: IFC Tabling - Peter's Parking Deck</p>
+                </li>
+                <li class="page__list__item">
+                    <p class="page__text">August 13 @ 11:15AM: Rush Orientation 1 - Klaus Auditorium</p>
+                </li>
+                <li class="page__list__item">
+                    <p class="page__text">August 14 @ 11:15AM: Rush Orientation 2 - Klaus Auditorium</p>
+                </li>
+                <li class="page__list__item">
+                    <p class="page__text">August 17 - 19 @ 7-11PM: Formal Rush</p>
+                </li>
+                <li class="page__list__item">
+                    <p class="page__text">August 20 - 22 @ 7-10PM: Formal Rush</p>
+                </li>
+            </ul>
             <h3 class="page__h3">Tips for a Successful Recruitment</h3>
             <ul class="page__list"> 
                 <li class="page__list__item">
@@ -149,8 +165,14 @@
                 invitation to membership of a chapter. So, what are you waiting 
                 for?
             </p>
-            <h2 class="page__h2">Rules and Reporting</h2>
-            <h2 class="page__h2">FAQs</h2>
+            <h2 class="page__h2" id="rules-and-reporting">Rules and Reporting</h2>
+            <p class="page__text">For policies around recruitment, please see 
+                our <a class="page__link" href="/static/pdf/IFC_Bylaws_04.14.2020.pdf">Bylaws</a>.
+                If you have any questions or believe there are any violations, 
+                please contact the 
+                <a class="page__link" href="/#contact">Executive Board</a>.
+            </p>
+            <h2 class="page__h2" id="faqs">FAQS</h2>
             <h3 class="page__h3">Why should I join a fraternity?</h3>
         </div>
         {% include 'partials/footer.html' %}
@@ -158,5 +180,6 @@
         <script src="{% static 'js/cheers.js' %}"></script>
         <script src="{% static 'js/cookies.js' %}"></script>
         <script src="{% static 'js/dropdown.js' %}"></script>
+        <script src="{% static 'js/nav_links.js' %}"></script>
     </body>
 </html>
