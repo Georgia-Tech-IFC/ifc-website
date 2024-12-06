@@ -700,7 +700,7 @@ President Welcome
 @media screen and (max-width: 425px) {
     .president__welcome__image__container {
         float: none;
-        width: 100vw;
+        width: calc(100vw - 8rem);
         margin: 0;
     }
 }
