@@ -1146,6 +1146,12 @@ Chapters
     grid-template-columns: repeat(4, 1fr);
 }
 
+@media screen and (max-width: 465px) {
+    .chapter__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .chapter__image {
     width: auto;
     height: 16rem;
@@ -1218,6 +1224,12 @@ Exec
 .exec__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 465px) {
+    .exec__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .exec__image {
