@@ -168,11 +168,26 @@ Nav
     display: none;
 }
 
+.nav__menu__button > svg {
+    height: 24px;
+    width: 24px;
+}
+
+.nav__menu__button > svg > path {
+    stroke: var(--white);
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 @media screen and (max-width: 768px) {
     .nav__menu__button {
+        background: transparent;
         display: block;
         height: 1.875rem;
         width: 1.875rem;
+        border: none;
+        padding: 0;
     }
 }
 
@@ -646,7 +661,7 @@ President Welcome
 
 @media screen and (max-width: 768px) {
     .president__welcome__container {
-        padding: 4rem 2rem;
+        padding: 2rem 2rem;
     }
 }
 
@@ -656,9 +671,24 @@ President Welcome
     margin: 0 0 4rem 4rem;
 }
 
+@media screen and (max-width: 425px) {
+    .president__welcome__image__container {
+        float: none;
+        width: 100vw;
+        margin: 0;
+    }
+}
+
 .president__welcome__image {
     width: 100%;
     height: auto;
+}
+
+@media screen and (max-width: 425px) {
+    .president__welcome__image {
+        width: calc(100vw - 4rem);
+        height: auto;
+    }
 }
 
 .president__welcome__image__name {
@@ -681,6 +711,12 @@ President Welcome
     font-weight: 600;
     font-size: 3rem;
     margin: 0 0 2rem 0;
+}
+
+@media screen and (max-width: 425px) {
+    .president__welcome__header {
+        font-size: 2rem;
+    }
 }
 
 .president__welcome__text {
