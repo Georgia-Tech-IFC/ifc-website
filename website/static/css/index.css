@@ -152,6 +152,32 @@ Nav
     animation: nav-fade-out .25s ease-in-out forwards;
 }
 
+@keyframes nav-button-fade-in {
+    0% {
+        stroke: var(--white);
+    }
+    100% {
+        stroke: var(--off-black);
+    }
+}
+
+.nav__button__fade-in > svg > path {
+    animation: nav-button-fade-in .25s ease-in-out forwards;
+}
+
+@keyframes nav-button-fade-out {
+    0% {
+        stroke: var(--off-black);
+    }
+    100% {
+        stroke: var(--white);
+    }
+}
+
+.nav__button__fade-out > svg > path {
+    animation: nav-button-fade-out .25s ease-in-out forwards;
+}
+
 .nav__logo__container,
 .nav__links__container {
     align-items: center;
