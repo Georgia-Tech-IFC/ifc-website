@@ -8,5 +8,7 @@ urlpatterns = [
     path('purpose', purpose),
     path('exec', exec),
     path('cookies-policy', cookies_policy),
-    path('rush', rush)
+    path('rush', rush),
+    path('for-parents', for_parents),
+    path('action/submit-contact', submit_contact)
 ]

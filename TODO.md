@@ -1,19 +1,21 @@
 TODO:
-- rush schedule
-- rush faqs
-- rush nav links
-- awards
-- summer housing
-- accessibility features
-- mobile styling
-- polish and clean
+- dynamic styling
+- grade reports
+- add socials to nav bar
+- annual awards
+- ada accessibility (and cookies)
 
-ASK:
-- rules and reporting in rush
-- exec stuff for exec page
+TODO AFTER GETTING INFO:
+- fix exec page
+- fix grade reports
+- fix contact page
+
+STILL NEED:
+- stuff for exec page and contact
   - picture
   - name
   - class
+  - position
   - ifc email
-- social registration and financial pages for chapter resources
+- grade report information
 

@@ -931,6 +931,12 @@ Page
     font-size: 1.125rem;
 }
 
+.page__text__center {
+    font-weight: 400;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
 .page__link {
     color: var(--off-black);
     transition: 0.125s ease-in-out;
