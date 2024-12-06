@@ -724,6 +724,12 @@ President Welcome
     font-size: 2rem;
 }
 
+@media screen and (max-width: 425px) {
+    .president__welcome__image__name {
+        font-size: 1.5rem;
+    }
+}
+
 .president__welcome__image__title {
     color: var(--off-black-lighter);
     font-family: "din-2014", sans-serif;
@@ -742,6 +748,7 @@ President Welcome
 @media screen and (max-width: 425px) {
     .president__welcome__header {
         font-size: 2rem;
+        margin: 1rem 0 0 0;
     }
 }
 
