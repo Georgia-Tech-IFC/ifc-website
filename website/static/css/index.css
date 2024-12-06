@@ -98,6 +98,25 @@ Nav
     z-index: 991;
 }
 
+@media screen and (max-width: 768px) {
+    .nav {
+        --x-padding: 2rem;
+        align-items: center;
+        display: flex;
+        background: transparent;
+        box-shadow: none;
+        font-family: "Roboto", sans-serif;
+        height: 3.75rem;
+        padding: 0 var(--x-padding);
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 991;
+    }
+}
+
 .nav__white {
     background: var(--white);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
@@ -137,6 +156,24 @@ Nav
 .nav__links__container {
     align-items: center;
     display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__links__container {
+        display: none;
+    }
+}
+
+.nav__menu__button {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__menu__button {
+        display: block;
+        height: 1.875rem;
+        width: 1.875rem;
+    }
 }
 
 .nav__logo {
@@ -383,6 +420,31 @@ Landing Background
         linear-gradient(#000 0 0) content-box;
 }
 
+@media screen and (max-width: 768px) {
+    .welcome__container {
+        color: var(--white);
+        font-family: "din-2014",sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        z-index: inherit;
+        margin-left: 2rem;
+        width: calc(100vw - 4rem);
+        padding: 1.1rem 1.5rem 1.5rem 1.5rem;
+        --s: 3rem; /* the size on the corner */
+        --t: 3px;  /* the thickness of the border */
+        --pad: calc(1.5rem + var(--t));
+        padding: calc(1.1rem + var(--t)) var(--pad) calc(1.1rem + var(--t)) var(--pad);
+        outline: var(--t) solid transparent;
+        outline-offset: calc(-1*var(--t));
+        mask:
+            conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+            calc(100% - var(--s)) calc(100% - var(--s))/calc(100%) calc(100%),
+            conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
+            0 0/calc(100%) calc(100%),
+            linear-gradient(#000 0 0) content-box;
+    }
+}
+
 @keyframes welcome-container-fade-in {
     0% {
         outline: var(--t) solid transparent;
@@ -421,11 +483,24 @@ Landing Background
     line-height: 4rem;
 }
 
+@media screen and (max-width: 768px) {
+    .welcome__line {
+        line-height: 2rem;
+    }
+}
+
 .welcome__char__trans,
 .welcome__char__show {
     font-size: 3.5rem;
     padding: 0;
     margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome__char__trans,
+    .welcome__char__show {
+        font-size: 1.75rem;
+    }
 }
 
 .welcome__char__trans {
@@ -569,6 +644,12 @@ President Welcome
     padding: 8rem 16rem;
 }
 
+@media screen and (max-width: 768px) {
+    .president__welcome__container {
+        padding: 4rem 2rem;
+    }
+}
+
 .president__welcome__image__container {
     float: right;
     width: 20vw;
@@ -697,6 +778,12 @@ Mission
     justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+    .mission__container {
+        padding: 4rem 2rem;
+    }
+}
+
 .mission__wrapper {
     display: flex;
     flex-direction: column;
@@ -735,7 +822,6 @@ Recruitment
 */
 
 .recruitment__container {
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -743,6 +829,12 @@ Recruitment
     background: var(--white);
     width: 100vw;
     padding: 0 16rem 4rem 16rem;
+}
+
+@media screen and (max-width: 768px) {
+    .recruitment__container {
+        padding: 0 2rem 4rem 2rem;
+    }
 }
 
 .recruitment__header {
@@ -772,12 +864,24 @@ Contact
     padding: 4rem 16rem;
 }
 
+@media screen and (max-width: 768px) {
+    .contact__container {
+        padding: 4rem 4rem;
+    }
+}
+
 .contact__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 40vw;
+}
+
+@media screen and (max-width: 768px) {
+    .contact__wrapper {
+        width: 100vw;
+    }
 }
 
 .contact__form {
