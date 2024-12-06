@@ -206,6 +206,10 @@ Nav
     stroke-linejoin: round;
 }
 
+.nav__menu__button__white > svg > path {
+    stroke: var(--off-black);
+}
+
 @media screen and (max-width: 768px) {
     .nav__menu__button {
         background: transparent;
@@ -1061,6 +1065,12 @@ Page
     padding: 10rem 16rem;
     width: 100vw;
     min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+    .page__content {
+        padding: 6rem 2rem;
+    }
 }
 
 .page__header {
