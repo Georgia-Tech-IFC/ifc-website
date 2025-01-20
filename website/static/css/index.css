@@ -420,13 +420,16 @@ Mobile Nav
 ================================================================================
 */
 .nav__mobile__menu {
-    background-color: pink;
+    background: white;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    padding: 2rem;
+    padding: 1rem 2rem;
     position: fixed;
-    transform: translateX(100vw);
-    width: calc(100vw + 2rem);
-    z-index: 998;
+    top: 0;
+    left: 100vw;
+    width: 100vw;
+    z-index: 996;
 }
 
 .nav__mobile__menu__close__button__container {
@@ -437,8 +440,8 @@ Mobile Nav
 
 .nav__mobile__menu__close__button,
 .nav__mobile__menu__close__button__icon {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 24px;
+    width: 24px;
 }
 
 .nav__mobile__menu__close__button {
@@ -455,17 +458,38 @@ Mobile Nav
     stroke-width: 2px;
 }
 
+.nav__mobile__menu__header,
+.nav__mobile__menu__link {
+    display: block;
+    line-height: 1rem;
+}
+
 .nav__mobile__menu__header {
-    font-family: 'din-2014';
-    font-size: 1.5rem;
+    color: var(--tech-gold);
+    font-family: 'din-2014', sans-serif;
+    font-size: 1rem;
+    margin: .875rem 0;
+}
+
+.nav__mobile__menu__link {
+    color: var(--off-black);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: .5rem 0;
+    text-decoration: none;
+}
+
+.nav__mobile__menu__link:hover {
+    text-decoration: none;
 }
 
 @keyframes nav-mobile-menu-close {
     0% {
-        transform: translateX(0);
+        left: 0;
     }
     100% {
-        transform: translateX(100vw);
+        left: 100vw;
     }
 }
 
@@ -475,10 +499,10 @@ Mobile Nav
 
 @keyframes nav-mobile-menu-open {
     0% {
-        transform: translateX(100vw);
+        left: 100vw;
     }
     100% {
-        transform: translateX(0);
+        left: 0;
     }
 }
 
