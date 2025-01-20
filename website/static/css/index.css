@@ -415,6 +415,50 @@ Nav
 .nav__dropdown__fade-out {
     animation: nav-dropdown-fade-out .25s ease-in-out forwards;
 }
+/*
+Mobile Nav
+================================================================================
+*/
+.nav__mobile__menu {
+    background-color: white;
+    height: 100vh;
+    padding: 2rem;
+    position: fixed;
+    width: 100vw;
+    z-index: 998;
+}
+
+.nav__mobile__menu__close__button__container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.nav__mobile__menu__close__button,
+.nav__mobile__menu__close__button__icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.nav__mobile__menu__close__button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__mobile__menu__close__button__icon {
+    stroke: var(--off-black);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2px;
+}
+
+.nav__mobile__menu__header {
+    font-family: 'din-2014';
+    font-size: 1.5rem;
+}
+
 
 /*
 Landing Background
