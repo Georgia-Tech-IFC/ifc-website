@@ -667,6 +667,13 @@ Cookies
     z-index: 995;
     bottom: 0;
     opacity: 1;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .cookies__banner {
+        padding: 1rem 1rem;
+    }
 }
 
 .cookies__link,
@@ -717,6 +724,7 @@ President Welcome
 
 @media screen and (max-width: 768px) {
     .president__welcome__container {
+        display: block;
         padding: 2rem 2rem;
     }
 }
@@ -726,23 +734,37 @@ President Welcome
     margin: 0 3rem 0 0;
 }
 
-@media screen and (max-width: 425px) {
-    .president__welcome__image__container {
-        float: none;
-        width: calc(100vw - 8rem);
-        margin: 0;
-    }
-}
-
 .president__welcome__image {
     width: 20rem;
     height: auto;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
+    .president__welcome__image__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0;
+    }
+
     .president__welcome__image {
-        width: calc(100vw - 4rem);
+        width: 20rem;
         height: auto;
+    }
+
+    .president__welcome__image__name,
+    .president__welcome__image__title {
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 20rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .president__welcome__image {
+        width: 20rem;
     }
 }
 
@@ -806,6 +828,10 @@ Welcome Links
     flex-direction: column;
 }
 
+.welcome__link__container:hover {
+    text-decoration: none;
+}
+
 .welcome__link__container__blue {
     background-color: var(--navy-blue);
 }
@@ -821,6 +847,7 @@ Welcome Links
     color: var(--white);
     display: block;
     overflow-x: visible !important;
+    text-decoration: none;
 }
 
 .welcome__link__icon {
@@ -828,6 +855,23 @@ Welcome Links
     height: 8rem;
     width: 8rem;
     margin: 0 0 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .welcome__link__container {
+        height: 25vh;
+    }
+
+    .welcome__link {
+        font-size: 1.25rem;
+    }
+
+    .welcome__link__icon {
+        fill: var(--white);
+        height: 4rem;
+        width: 4rem;
+        margin: 0 0 2rem 0;
+    }
 }
 
 .arrow-icon {
@@ -849,16 +893,16 @@ Welcome Links
     text-decoration: none;
 }
 
-.welcome__link:hover .arrow-icon path:nth-child(1) {
+.welcome__link__container:hover .arrow-icon path:nth-child(1) {
     d: path("M15 4H4V4");
 }
 
-.welcome__link:hover .arrow-icon path:nth-child(2) {
+.welcome__link__container:hover .arrow-icon path:nth-child(2) {
     d: path("M14.5 4H3.5H0");
     transform: translateX(4px);
 }
 
-.welcome__link:hover .arrow-icon path:nth-child(3) {
+.welcome__link__container:hover .arrow-icon path:nth-child(3) {
     transform: translateX(4px);
 }
 
@@ -965,7 +1009,7 @@ Contact
 
 @media screen and (max-width: 768px) {
     .contact__container {
-        padding: 4rem 4rem;
+        padding: 0 2rem 4rem 2rem;
     }
 }
 
