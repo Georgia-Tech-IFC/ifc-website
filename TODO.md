@@ -1,21 +1,32 @@
-TODO:
-- dynamic styling
-- grade reports
-- add socials to nav bar
-- annual awards
-- ada accessibility (and cookies)
 
 TODO AFTER GETTING INFO:
 - fix exec page
 - fix grade reports
 - fix contact page
 
-STILL NEED:
-- stuff for exec page and contact
-  - picture
-  - name
-  - class
-  - position
-  - ifc email
-- grade report information
+# Needed
+- for each member of exec:
+ - full name
+ - picture
+ - position
+ - grade year
+ - ifc related email
+- president's welcome note
+- mission statement
+- grade reports information
+
+# Questions
+- should awards page be included
+
+# Need Approval On
+- rush page content
+- for parents page content
+
+# TODO
+- dynamic styling
+- accessbility
+- grade reports?
+- annual awards?
+- replace content in exec page (need content)
+- make grade reports page ()
 
