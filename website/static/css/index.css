@@ -420,11 +420,12 @@ Mobile Nav
 ================================================================================
 */
 .nav__mobile__menu {
-    background-color: white;
+    background-color: pink;
     height: 100vh;
     padding: 2rem;
     position: fixed;
-    width: 100vw;
+    transform: translateX(100vw);
+    width: calc(100vw + 2rem);
     z-index: 998;
 }
 
@@ -459,6 +460,31 @@ Mobile Nav
     font-size: 1.5rem;
 }
 
+@keyframes nav-mobile-menu-close {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+.nav__mobile__menu__close {
+    animation: nav-mobile-menu-close .25s ease-in-out forwards;
+}
+
+@keyframes nav-mobile-menu-open {
+    0% {
+        transform: translateX(100vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.nav__mobile__menu__open {
+    animation: nav-mobile-menu-open .25s ease-in-out forwards;
+}
 
 /*
 Landing Background
