@@ -1449,3 +1449,36 @@ Exec
     font-weight: 400;
     font-size: 1.125rem;
 }
+
+/*
+Footer
+================================================================================
+*/
+
+.footer {
+    align-items: center;
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+    width: 100vw;
+}
+
+.footer__logo {
+    margin: 0 .5rem 0 0;
+    width: 10rem;
+}
+
+.footer__link {
+    color: var(--tech-gold);
+    font-family: "din-2014", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0 .5rem 0 0;
+    text-decoration: none;
+    transition: .125s ease-in-out;
+}
+
+.footer__link:hover {
+    color: var(--tech-gold-hover);
+    text-decoration: none;
+}
