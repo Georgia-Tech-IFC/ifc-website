@@ -836,7 +836,6 @@ President Welcome
 @media screen and (max-width: 768px) {
     .president__welcome__image__container {
         display: flex;
-        background-color: red;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -860,6 +859,18 @@ President Welcome
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .president__welcome__image {
         width: 20rem;
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .president__welcome__image__name,
+    .president__welcome__image__title,
+    .president__welcome__image {
+        width: calc(100vw - 4rem);
+    }
+
+    .president__welcome__image__container {
+        width: calc(100vw - 4rem);
     }
 }
 
