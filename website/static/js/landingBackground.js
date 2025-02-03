@@ -20,16 +20,30 @@ const crossfadeImage = ( front, back ) => {
 
 const initImageBackground = () => {
     const container = document.querySelector( '.landing__background__container' )
-    const images = [
-        '/static/img/chapters/alpha_epsilon_pi.jpg',
-        '/static/img/chapters/alpha_sigma_phi.jpg',
-        '/static/img/chapters/chi_psi.jpg',
-        '/static/img/chapters/delta_chi.jpg',
-        '/static/img/chapters/lambda_chi_alpha.jpg',
-        '/static/img/chapters/phi_kappa_theta.jpg',
-        '/static/img/chapters/phi_sigma_kappa.jpg',
-        '/static/img/chapters/sigma_phi_epsilon.jpg'
-    ]
+
+    let images = []
+    if ( window.innerWidth < 465 ) {
+        images = [
+            '/static/img/chapters/mobile/alpha_epsilon_pi.png',
+            '/static/img/chapters/mobile/alpha_sigma_phi.png',
+            '/static/img/chapters/mobile/chi_psi.png',
+            '/static/img/chapters/mobile/delta_chi.png',
+            '/static/img/chapters/mobile/phi_kappa_theta.png',
+            '/static/img/chapters/mobile/phi_sigma_kappa.png',
+            '/static/img/chapters/mobile/sigma_phi_epsilon.png'
+        ]
+    } else {
+        images = [
+            '/static/img/chapters/alpha_epsilon_pi.jpg',
+            '/static/img/chapters/alpha_sigma_phi.jpg',
+            '/static/img/chapters/chi_psi.jpg',
+            '/static/img/chapters/delta_chi.jpg',
+            '/static/img/chapters/lambda_chi_alpha.jpg',
+            '/static/img/chapters/phi_kappa_theta.jpg',
+            '/static/img/chapters/phi_sigma_kappa.jpg',
+            '/static/img/chapters/sigma_phi_epsilon.jpg'
+        ]
+    }
 
     let back = createImage( images[1] )
     container.appendChild( back )
