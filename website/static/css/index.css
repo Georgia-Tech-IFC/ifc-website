@@ -424,6 +424,7 @@ Mobile Nav
     display: flex;
     flex-direction: column;
     height: 100vh;
+    opacity: 0;
     padding: 1rem 2rem;
     position: fixed;
     top: 0;
@@ -487,27 +488,31 @@ Mobile Nav
 @keyframes nav-mobile-menu-close {
     0% {
         left: 0;
+        opacity: 1;
     }
     100% {
         left: 100vw;
+        opacity: 0;
     }
 }
 
 .nav__mobile__menu__close {
-    animation: nav-mobile-menu-close .25s ease-in-out forwards;
+    animation: nav-mobile-menu-close .2s ease-in-out forwards;
 }
 
 @keyframes nav-mobile-menu-open {
     0% {
         left: 100vw;
+        opacity: 0;
     }
     100% {
         left: 0;
+        opacity: 1;
     }
 }
 
 .nav__mobile__menu__open {
-    animation: nav-mobile-menu-open .25s ease-in-out forwards;
+    animation: nav-mobile-menu-open .2s ease-in-out forwards;
 }
 
 /*
@@ -839,7 +844,7 @@ President Welcome
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 100vw;
+        width: calc(100vw - 4rem);
         margin: 0;
     }
 
