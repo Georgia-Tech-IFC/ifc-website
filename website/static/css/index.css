@@ -3,7 +3,7 @@
     --tech-gold-hover: rgb(142, 129, 83);
     --navy-blue: rgb(0, 48, 87);
     --navy-blue-hover: rgb(0, 21, 38);
-    --white: rgb(255, 255, 255);
+    --white: rgb(253, 254, 255);
     --off-black: #262626;
     --off-black-lighter: #777777;
     --gray-matter: rgb(84, 88, 90);
@@ -1225,7 +1225,7 @@ Page
 */
 
 .page__content {
-    background-color: white;
+    background-color: rgb(245, 245, 245);
     padding: 10rem 16rem;
     width: 100vw;
     min-height: 100vh;
