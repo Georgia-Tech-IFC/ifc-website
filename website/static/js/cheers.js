@@ -1,7 +1,7 @@
 const cheers = () => {
     const message = `
     This site created with ❤️ by Michael Vaden.
-    https://www.swamppear.xyz`
+    https://www.linkedin.com/in/michaeljvaden/`
 
     console.log( message )
 }
