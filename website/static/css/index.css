@@ -985,6 +985,12 @@ Welcome Links
     }
 }
 
+@media screen and (max-width: 425px) {
+    .welcome__link__icon {
+        display: none;
+    }
+}
+
 .arrow-icon {
     height: 16px;
     width: 32px;
