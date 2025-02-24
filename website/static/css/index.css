@@ -1456,6 +1456,13 @@ Chapters
     transform: translateX(4px);
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .chapter__link:hover .chapter__arrow-icon path:nth-child(1) {
+        display: none !important;
+        stroke-width: 0 !important;
+    }
+} 
+
 /*
 Exec
 ================================================================================
