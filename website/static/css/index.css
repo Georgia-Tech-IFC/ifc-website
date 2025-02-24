@@ -1049,16 +1049,13 @@ Welcome Links
     }
 }
 
-@media not all and (min-resolution: 0.001dpcm) { 
-    @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
-        .arrow-icon > .f {
-            display: none !important;
-            opacity: 0 !important;
-            fill: none !important;
-        }
-    }
-}
-
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .arrow-icon > .f {
+        display: none !important;
+        opacity: 0 !important;
+        fill: none !important;
+    }  
+} 
 /*
 Mission
 ================================================================================
