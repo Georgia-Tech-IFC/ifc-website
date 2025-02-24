@@ -679,6 +679,13 @@ Landing Background
     }
 }
 
+@media screen and (max-width: 465px) {
+    .welcome__char__trans,
+    .welcome__char__show {
+        font-size: 1.375rem;
+    }
+}
+
 .welcome__char__trans {
     opacity: 0;
 }
