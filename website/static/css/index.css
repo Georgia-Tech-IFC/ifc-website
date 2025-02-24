@@ -1041,18 +1041,24 @@ Welcome Links
     transform: translateX(4px);
 }
 
-/* safari and firefox arrow icon hotfix */
-@supports (-moz-appearance: none) or (-webkit-touch-callout: none) {
-    .arrow-icon path:nth-child(1) {
-        display: none;
-        opacity: 0;
-    }
-
+@supports (-moz-appearance: none) {
+    .arrow-icon path:nth-child(1),
     .arrow-icon path:nth-child(2) {
-        display: none;
-        opacity: 0;
+        display: none !important;
+        opacity: 0 !important;
     }
 }
+
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance: none) {
+        .arrow-icon path:nth-child(1),
+        .arrow-icon path:nth-child(2) {
+            display: none !important;
+            opacity: 0 !important;
+        }
+    }
+}
+
 
 
 /*
