@@ -532,7 +532,7 @@ Landing Background
     background-repeat: no-repeat !important;
 }
 
-.landing__background {
+.landing__background__container > img {
     background-size: cover !important;
     position: absolute;
     top: 0;
