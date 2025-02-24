@@ -1042,25 +1042,22 @@ Welcome Links
 }
 
 @supports (-moz-appearance: none) {
-    .arrow-icon path:nth-child(1),
-    .arrow-icon path:nth-child(2) {
+    .arrow-icon > .f {
         display: none !important;
         opacity: 0 !important;
+        fill: none !important;
     }
 }
 
 @media not all and (min-resolution: 0.001dpcm) { 
     @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
-        .arrow-icon path:nth-child(1),
-        .arrow-icon path:nth-child(2) {
+        .arrow-icon > .f {
             display: none !important;
             opacity: 0 !important;
+            fill: none !important;
         }
     }
 }
-
-
-
 
 /*
 Mission
