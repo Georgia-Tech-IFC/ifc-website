@@ -1041,6 +1041,18 @@ Welcome Links
     transform: translateX(4px);
 }
 
+/* safari and firefox arrow icon hotfix */
+@supports (-moz-appearance: none) or (-webkit-touch-callout: none) {
+    .welcome__link__container:hover .arrow-icon path:nth-child(1) {
+        display: none;
+    }
+
+    .welcome__link__container:hover .arrow-icon path:nth-child(2) {
+        display: none;
+    }
+}
+
+
 /*
 Mission
 ================================================================================
