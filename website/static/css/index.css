@@ -565,8 +565,7 @@ Landing Background
 }
 
 .welcome__container {
-   /*color: var(--white);*/
-    color: red;
+    color: var(--white);
     font-family: "din-2014",sans-serif;
     font-weight: 600;
     font-size: 3.5rem;
