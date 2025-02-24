@@ -1041,6 +1041,12 @@ Welcome Links
     transform: translateX(4px);
 }
 
+.arrow-icon > .f {
+    display: none !important;
+    opacity: 0 !important;
+    fill: none !important;
+}  
+
 @supports (-moz-appearance: none) {
     .arrow-icon > .f {
         display: none !important;
