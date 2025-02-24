@@ -533,6 +533,9 @@ Landing Background
 }
 
 .landing__background__container > img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
     background-size: cover !important;
     position: absolute;
     top: 0;
