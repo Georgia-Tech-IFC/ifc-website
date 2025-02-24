@@ -13,9 +13,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('DJANGO_SECRET')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['147.182.216.56']
+ALLOWED_HOSTS = ['147.182.216.56', 'www.gatechifc.org', 'gatechifc.org']
 # Application definition
 
 INSTALLED_APPS = [
