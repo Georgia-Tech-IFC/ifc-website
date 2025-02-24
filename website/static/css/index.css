@@ -1043,12 +1043,14 @@ Welcome Links
 
 /* safari and firefox arrow icon hotfix */
 @supports (-moz-appearance: none) or (-webkit-touch-callout: none) {
-    .welcome__link__container:hover .arrow-icon path:nth-child(1) {
+    .arrow-icon path:nth-child(1) {
         display: none;
+        opacity: 0;
     }
 
-    .welcome__link__container:hover .arrow-icon path:nth-child(2) {
+    .arrow-icon path:nth-child(2) {
         display: none;
+        opacity: 0;
     }
 }
 
