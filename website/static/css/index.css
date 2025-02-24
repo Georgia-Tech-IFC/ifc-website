@@ -1030,7 +1030,6 @@ Welcome Links
 
 .welcome__link__container:hover .arrow-icon path:nth-child(1) {
     d: path("M15 4H4V");
-    fill: transparent;
 }
 
 .welcome__link__container:hover .arrow-icon path:nth-child(2) {
