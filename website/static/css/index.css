@@ -1049,8 +1049,8 @@ Welcome Links
     }
 }
 
-@media not all and (min-resolution:.001dpcm) { 
-    @supports (-webkit-appearance: none) {
+@media not all and (min-resolution: 0.001dpcm) { 
+    @supports (-webkit-appearance: none) and (not (-moz-appearance: none)) {
         .arrow-icon path:nth-child(1),
         .arrow-icon path:nth-child(2) {
             display: none !important;
@@ -1058,6 +1058,7 @@ Welcome Links
         }
     }
 }
+
 
 
 
