@@ -76,4 +76,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
         '.nav__link__rush', '.nav__dropdown__rush', 'rush')
     const resourcesDropdown = new DropdownMenu(
         '.nav__link__resources', '.nav__dropdown__resources', 'resources')
+    const philanthropyDropdown = new DropdownMenu(
+        '.nav__link__philanthropy', '.nav__dropdown__philanthropy', 'philanthropy')
 })
