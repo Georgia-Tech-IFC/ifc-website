@@ -1416,6 +1416,15 @@ Chapters
     text-align: center;
 }
 
+.chapter__org {
+    color: var(--off-black);
+    font-family: "din-2014",sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0;
+    text-align: center;
+}
+
 .chapter__link {
     text-decoration: none;
 }
