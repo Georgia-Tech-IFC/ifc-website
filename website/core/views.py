@@ -30,31 +30,10 @@ def rush(request):
 def for_parents(request):
     return render(request, 'for_parents.html')
 
-def submit_contact(request):
-    if request.method == 'POST':
-        print(request.POST)
 
-    return HttpResponse("OK", status=200)
+def ifc_philanthropy(request):
+    return render(request, 'ifc_philanthropy.html')
 
 
-def submit_contact(request):
-    if request.method == "POST":
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            # Process form data (e.g., save to database, send email, etc.)
-            first_name = form.cleaned_data['first_name']
-            last_name = form.cleaned_data['last_name']
-            email = form.cleaned_data['email']
-            subject = form.cleaned_data['subject']
-            message = form.cleaned_data['message']
-            print(first_name)
-            print(last_name)
-            print(email)
-            print(subject)
-            print(message)
-
-            return JsonResponse({'status': 'success', 'message': 'Message submitted.'})
-        else:
-            return JsonResponse({'status': 'error', 'message': 'Invalid data submitted.'}, status=400)
-    else:
-        return JsonResponse({'status': 'error', 'message': 'Invalid request method.'}, status=405)
+def chapter_philanthropy(request):
+    return render(request, 'chapter_philanthropy.html')
