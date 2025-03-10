@@ -1368,6 +1368,29 @@ Page
     color: var(--tech-gold);
     text-decoration: underline;
 }
+.page__img__center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.page__img {
+    width: 50vw;
+}
+
+.page__img__description {
+    color: var(--gray-matter);
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: .875rem;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .page__img {
+        width: 100%;
+    }
+}
 
 /*
 Chapters

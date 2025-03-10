@@ -1368,6 +1368,15 @@ Page
     color: var(--tech-gold);
     text-decoration: underline;
 }
+.page__img__center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.page__img {
+    width: 50vw;
+}
 
 /*
 Chapters
