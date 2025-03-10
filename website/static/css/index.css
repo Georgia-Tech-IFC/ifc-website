@@ -1371,7 +1371,7 @@ Page
 .page__img__center {
     display: flex;
     justify-content: center;
-    width: 100%;
+    margin: 1rem 0 0 0;
 }
 
 .page__img {
@@ -1384,6 +1384,7 @@ Page
     font-family: "Roboto", sans-serif;
     font-size: .875rem;
     justify-content: center;
+    margin: .375rem 0 1rem 0;
 }
 
 @media screen and (max-width: 768px) {
