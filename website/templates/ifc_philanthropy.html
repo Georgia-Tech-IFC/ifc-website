@@ -1,52 +1,80 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    {% include 'partials/head.html' %}
-    <body>
-        {% include 'partials/nav.html' %}
-        <div class="page__content">
-            <h1 class="page__header">IFC Philanthropy</h1>
-            <h3 class="page__h3">Klemis Kitchen</h3>
-            <p class="page__text">
-                <a href="https://star.studentlife.gatech.edu/klemis-kitchen/" class="page__link">Klemis Kitchen</a> 
-                is a vital resource at Georgia Tech, dedicated to supporting students facing food insecurity.
-                Klemis Kitchen provides access to nutritious meals in a discreet and supportive environment, ensuring 
-                that every student never skips a meal and has the resources they need to focus on their academic and 
-                personal success. Through the 
-                <a href="https://gatech.campuslabs.com/engage/organization/the-campus-kitchen-project" class="page__link">Campus Kitchen Project (CKP)</a>,
-                leftover food from dining halls and kitchens is collected and packaged into individual meals, which are 
-                then distributed to those in need.
-            </p>
+  {% include 'partials/head.html' %}
+  <body>
+    {% include 'partials/nav.html' %}
+    <div class="page__content">
+      <h1 class="page__header">IFC Philanthropy</h1>
 
+      <h3 class="page__h3">Klemis Kitchen</h3>
+      <p class="page__text">
+        <a href="https://star.studentlife.gatech.edu/klemis-kitchen/" class="page__link">
+          Klemis Kitchen
+        </a>
+        is a vital resource at Georgia Tech, dedicated to supporting students facing food insecurity.
+        Klemis Kitchen provides access to nutritious meals in a discreet and supportive environment,
+        ensuring that every student never skips a meal and has the resources they need to focus on their
+        academic and personal success. Through the 
+        <a href="https://gatech.campuslabs.com/engage/organization/the-campus-kitchen-project" class="page__link">
+          Campus Kitchen Project (CKP)
+        </a>,
+        leftover food from dining halls and kitchens is collected and packaged into individual meals,
+        which are then distributed to those in need.
+      </p>
 
-            <div class="page__img__center">
-                <img class="page__img" src="{% static 'img/klemis_kitchen.jpg' %}"/>
-            </div>
-            <div class="page__img__description">
-                Klemis Kitchen is awarded the Gift to Tech donation.
-            </div>
-            <p class="page__text">
-                The Interfraternity Council (IFC) is proud to support Klemis Kitchen in its mission to combat food 
-                insecurity on campus. Through fundraising efforts and volunteer initiatives, IFC works to raise 
-                awareness and contribute to this important cause. By partnering with Klemis Kitchen, IFC reinforces its 
-                commitment to service, leadership, and fostering a strong, supportive campus community. Students in need 
-                of assistance or those looking to get involved can find more information through Georgia Tech's Student 
-                Life resources. 
-            </p>
-            <h3 class="page__h3">
-                <a 
-                  href="https://gatech.campuslabs.com/engage/organization/the-campus-kitchen-project" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  Sign up to volunteer!
-                </a>
-              </h3>
-        </div>
-        {% include 'partials/footer.html' %}
-        <script src="{% static 'js/cheers.js' %}"></script>
-        <script src="{% static 'js/dropdown.js' %}"></script>
-        <script src="{% static 'js/nav_links.js' %}"></script>
-        <script src="{% static 'js/nav_mobile.js' %}"></script>
-    </body>
+      <div class="page__img__center">
+        <img class="page__img" src="{% static 'img/klemis_kitchen.jpg' %}" alt="Klemis Kitchen Image" />
+      </div>
+      <div class="page__img__description">
+        Klemis Kitchen is awarded the Gift to Tech donation.
+      </div>
+
+      <p class="page__text">
+        The Interfraternity Council (IFC) is proud to support Klemis Kitchen in its mission to combat food
+        insecurity on campus. Through fundraising efforts and volunteer initiatives, IFC works to raise
+        awareness and contribute to this important cause. By partnering with Klemis Kitchen, IFC reinforces its
+        commitment to service, leadership, and fostering a strong, supportive campus community.
+        Students in need of assistance or those looking to get involved can find more information through
+        Georgia Tech's Student Life resources.
+      </p>
+
+      <h3 class="page__h3" style="margin-bottom: 40px;">
+        <a 
+          href="https://gatech.campuslabs.com/engage/organization/the-campus-kitchen-project"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Sign up to volunteer!
+        </a>
+      </h3>
+
+      <h3 class="page__h3">Value Based Grants</h3>
+      <p class="page__text">
+        The Interfraternity Council (IFC) offers Value-Based Grants (VBGs) to promote the core values of its
+        member fraternities. These grants aim to reimburse fraternity expenses for events that align with their
+        mission and values, including philanthropy, fundraising, or service activities. The funds are distributed
+        twice per semester, with each request reviewed by the IFC VP of Philanthropy, VP of Finance, and the Executive
+        Board. Chapters may apply for reimbursement by submitting an application form and providing itemized receipts.
+        Funding requests must meet specific guidelines, which can be found in the bylaws, and a cap of $1,500 per chapter
+        per semester. Any individual event that costs more than $500 is subject to less reimbursement for costs as
+        specified in the bylaws. If your fraternity is interested in applying, please submit the VBG application form
+        through the link below. Please reach out with any questions or concerns.
+      </p>
+      <h3 class="page__h3">
+        <a 
+            href="https://docs.google.com/forms/d/e/1FAIpQLSezj7gcdTSlZlVGbf5L8iBydcU_V6Sh7JrPOBcMQMwJ8dryuA/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            2025 VBG Application
+        </a>
+        </h3>
+    </div>
+    {% include 'partials/footer.html' %}
+    <script src="{% static 'js/cheers.js' %}"></script>
+    <script src="{% static 'js/dropdown.js' %}"></script>
+    <script src="{% static 'js/nav_links.js' %}"></script>
+    <script src="{% static 'js/nav_mobile.js' %}"></script>
+  </body>
 </html>
