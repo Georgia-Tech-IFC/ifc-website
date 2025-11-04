@@ -7,4 +7,6 @@
 5. navigate to ```website/``` and run ```python3 manage.py runserver```
 
 ## Push New Version to Server
-1. 
+1. Log into to digital ocean 
+2. Navigate to the ubuntu server and go to “console” in the top right
+3. Run “cat README.md” then follow the commands from there
