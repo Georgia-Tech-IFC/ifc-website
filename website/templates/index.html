@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
     {% include 'partials/head.html' %}
+    <link rel="preload" as="image" href="{% static 'img/chapters/alpha_epsilon_pi.webp' %}" media="(min-width: 465px)">
+    <link rel="preload" as="image" href="{% static 'img/chapters/mobile/alpha_epsilon_pi.webp' %}" media="(max-width: 464px)">
     <body>
         {% include 'partials/nav-index.html' %}
         {% include 'partials/welcome.html' %}
