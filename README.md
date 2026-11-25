@@ -22,7 +22,7 @@ Lines like `{% include partials/nav.html %}` pull in a shared piece from `_inclu
 
 1. Create a branch, or edit directly on GitHub with the pencil icon on any file.
 2. Make your changes. Common ones:
-   - **New exec board:** edit `exec.html` and add headshots to `static/img/exec/` (JPGs around 1000px tall keep the site fast).
+   - **New exec board:** edit `exec.html` and add headshots to `static/img/exec/`. Make each headshot an **800×800 square JPG** with head and shoulders, the face centered, and the face about 40% of the photo's width, so the cards line up. Delete the old officers' photos.
    - **President's welcome:** edit `_includes/partials/president_welcome.html`.
    - **Rush dates and registration link:** edit `_includes/partials/recruitment.html` and `rush.html`.
    - **New PDF (Guide to Greek Life, grade report):** upload it to `static/pdf/` and update the link that points to it.
