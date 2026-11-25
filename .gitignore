@@ -1,7 +1,12 @@
-venv/
+# Jekyll build output (only created if you preview the site locally)
+_site/
+.jekyll-cache/
+
+# OS / editor junk
+.DS_Store
+
+# Never commit credentials
 .env
-__pycache__/
-migrations/
 creds.md
 id_ed25519
 id_ed25519.pub

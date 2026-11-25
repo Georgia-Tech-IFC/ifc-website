@@ -1,0 +1,8 @@
+# GitHub Pages builds this site automatically with Jekyll on every push to master.
+# Pages are the .html files in the repo root; shared pieces (nav, footer, etc.) live in _includes/.
+
+title: Georgia Tech IFC
+url: https://gatechifc.org
+
+exclude:
+  - README.md
